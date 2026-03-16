@@ -84,10 +84,10 @@ def image_agent(state: StoryState) -> StoryState:
         # Submit image generation job with fixed parameters
         job = image_client.images.generate(
             prompt=scene,
-            model="Flux1schnell",
+            model="Flux_2_Klein_4B_BF16",
             width=1024,
             height=512,
-            steps=10,
+            steps=4,
             seed=42,
             )
         
