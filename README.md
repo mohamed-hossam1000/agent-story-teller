@@ -14,7 +14,7 @@ An AI-powered storytelling system that generates creative stories and correspond
 
 ```
 agent-story-teller/
-├── agents.py          # Story and image generation agents
+├── agents.py          # Story generation, prompt, and image generation agents
 ├── orchestrator.py    # Workflow orchestration and file handling
 ├── env/               # Python virtual environment
 ├── output/            # Generated stories and images
@@ -94,9 +94,10 @@ Edit these constants in `orchestrator.py` to adjust behavior:
 
 ## How It Works
 
-1. **Story Agent**: Receives user prompt and generates descriptive scene prompts using Gemini
-2. **Image Agent**: Takes each scene description and generates a corresponding image using Flux
-3. **Output Handler**: Saves stories as text and downloads/saves images locally
+1. **Story Agent**: Receives user prompt and generates multi-scene story narratives using Google Gemini
+2. **Image Agent**: Converts each story scene into detailed image generation prompts using Google Gemini
+3. **Image Generation Tool**: Creates visual images for each scene prompt using the Flux model
+4. **Output Handler**: Saves stories as text and downloads/saves generated images locally
 
 ## API Integration
 

@@ -1,18 +1,13 @@
 Generated Story Scenes:
 ==================================================
 
-Scene 1:
-A stoic knight in gleaming silver full plate armor, adorned with a flowing crimson cape and a winged helmet, a sturdy longsword sheathed at his hip, rides a powerful black warhorse through a grand, sun-drenched castle gate. The early morning light bathes the ancient stone in a golden glow, as he looks determinedly towards a sprawling, verdant medieval landscape stretching before him.
+SCENE_1: Sir Kael, his blue eyes sharp with resolve, rode his sturdy warhorse, Valiant, into the sun-baked expanse of the Whispering Wastes. His worn, gleaming plate armor reflected the harsh light, a testament to countless prior skirmishes. The ancient map, clutched in his gauntleted hand, promised a hidden trove, far beyond the known kingdoms. A lone hawk circled high above, a silent omen.
 
-Scene 2:
-A stoic knight in gleaming silver full plate armor, adorned with a flowing crimson cape and a winged helmet, a sturdy longsword sheathed at his hip, stands dismounted in a dense, ancient forest. The dappled, gloomy light of late afternoon struggles through the gnarled canopy as he draws his glowing longsword, confronting a pair of predatory, phosphorescent eyes emerging from the shadowy undergrowth with a tense, vigilant expression.
+SCENE_2: Suddenly, a guttural growl echoed from behind jagged rock formations. Two colossal dire wolves, their fur matted and teeth bared, lunged. Kael, a seasoned warrior, swiftly drew his broadsword. Valiant reared, but Kael held firm, his blade flashing in a practiced arc, meeting the beasts' onslaught with courageous precision. He would not be deterred.
 
-Scene 3:
-A stoic knight in gleaming silver full plate armor, adorned with a flowing crimson cape and a winged helmet, a sturdy longsword sheathed at his hip, stands victorious beside ancient, moss-covered stone ruins deep within the forest. Soft, diffused light illuminates a forgotten altar, upon which a pulsating, ethereal blue rune has just appeared, capturing his curious gaze. The mood is one of quiet triumph and dawning discovery.
+SCENE_3: After vanquishing the predators, Kael pressed on, guided by the sun’s descent. He discovered a crumbling, vine-choked ruin, exactly as depicted on his faded map. An intricate, glowing symbol pulsed faintly on a corroded stone door. As he approached, a faint, chilling whisper seemed to emanate from within, a warning or an invitation.
 
-Scene 4:
-A stoic knight in gleaming silver full plate armor, adorned with a flowing crimson cape and a winged helmet, a sturdy longsword sheathed at his hip, cautiously walks deeper into a vast, eerie underground cave system. Dark, atmospheric lighting reveals glistening stalactites and stalagmites, while a mysterious, faint magical blue glow emanates from further within, drawing him forward with a mix of awe and anticipation.
+SCENE_4: Pushing open the heavy, creaking door, Kael stepped into a cavernous chamber. A spectral guardian, shimmering with ancient magic, materialized before a pedestal. Its translucent form pulsed with malevolent energy, blocking the path. Kael gripped his broadsword tighter, his heart pounding, knowing this was the final challenge.
 
-Scene 5:
-A stoic knight in gleaming silver full plate armor, adorned with a flowing crimson cape and a winged helmet, a sturdy longsword sheathed at his hip, stands in a hidden chamber within the cave. Brilliant, magical golden light illuminates a towering pile of shimmering gold, precious jewels, and ancient artifacts, glowing with an ethereal power. He reaches out, wonderstruck, towards a radiant, pulsating orb at the peak of the treasure, triumphant.
+SCENE_5: With a final, desperate parry, Kael dispelled the spectral ward. On the pedestal, instead of glittering gold, lay a single, luminous crystal pulsating with an inner warmth. As Kael touched it, visions of forgotten lore and untold wisdom flooded his mind. The true treasure wasn't wealth, but profound understanding, a far greater bounty.
 
