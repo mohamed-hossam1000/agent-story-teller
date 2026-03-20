@@ -18,6 +18,8 @@ An AI-powered storytelling system that generates creative stories and correspond
 - **Image Generation**: Creates visual representations for each story scene using the Flux model
 - **Streamlit Web UI**: Clean browser-based interface — no command line needed
 - **Dynamic Scene Control**: Configurable number of scenes (1–10) via a slider
+- **Save Story**: Download the full story as a `.txt` file
+- **Save Images**: Download all scene images bundled as a `.zip` file
 - **Consistent Characters**: Maintains visual consistency across scenes through AI instructions
 
 ---
@@ -85,7 +87,7 @@ agent-story-teller/
 streamlit run app.py
 ```
 
-This opens the app in your browser. Enter a story prompt, choose the number of scenes, and click **Generate Story**.
+This opens the app in your browser. Enter a story prompt, choose the number of scenes, and click **Generate Story**. Once generation is complete, you can download the story as a `.txt` file or all images as a `.zip` file.
 
 ### Command Line
 
