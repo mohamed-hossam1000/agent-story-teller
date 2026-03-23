@@ -7,8 +7,9 @@ This module contains agents for multi-stage story generation workflow:
 """
 from google import genai
 from google.genai import types
-from deapi import DeapiClient
+from deapi import AsyncDeapiClient
 from typing import TypedDict, Optional
+import asyncio
 import re
 from dotenv import load_dotenv
 
@@ -108,29 +109,24 @@ def image_agent(state: StoryState) -> StoryState:
 
     return state
 
+
 # Initialize image generation client
-image_client = DeapiClient()
+image_client = AsyncDeapiClient()
+
+async def _generate_images_async(scene_prompts):
+    """Helper function to generate images asynchronously for a list of scene prompts."""
+    jobs = await asyncio.gather(*[
+        image_client.images.generate(prompt=scene, model="Flux_2_Klein_4B_BF16",
+                                width=1024, height=512, steps=4, seed=42)
+        for scene in scene_prompts
+    ])
+    results = await asyncio.gather(*[job.wait() for job in jobs])
+    return [r.result_url for r in results]
+
 
 def image_generation_tool(state: StoryState) -> StoryState:
-    """Generate images for each story scene using Flux model.
-    
-    Iterates through scene prompts and creates corresponding images via API.
+    """Generate images from prompts using Flux model. 
+    This function is synchronous but calls an async helper to handle image generation asynchronously.
     """
-    # Initialize image URLs list to store all generated image URLs
-    state["image_urls"] = []
-    for i, scene in enumerate(state["scene_prompts"]):
-        # Submit image generation job with Flux parameters
-        job = image_client.images.generate(
-            prompt=scene,
-            model="Flux_2_Klein_4B_BF16",
-            width=1024,
-            height=512,
-            steps=4,
-            seed=42,
-            )
-        
-        # Wait for completion and store generated image URL
-        response = job.wait()
-        state["image_urls"].append(response.result_url)
-
+    state["image_urls"] = asyncio.run(_generate_images_async(state["scene_prompts"]))
     return state
